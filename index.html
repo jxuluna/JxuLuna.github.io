@@ -188,9 +188,9 @@
       
         
         <li class="menu-item menu-item-about">
-          <a href="/about/%20" rel="section">
+          <a href="/about/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
             
             About
           </a>
@@ -198,9 +198,9 @@
       
         
         <li class="menu-item menu-item-tags">
-          <a href="/tags/%20" rel="section">
+          <a href="/tags/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
             
             Tags
           </a>
@@ -208,9 +208,9 @@
       
         
         <li class="menu-item menu-item-categories">
-          <a href="/categories/%20" rel="section">
+          <a href="/categories/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
             
             Categories
           </a>
@@ -342,10 +342,15 @@
       
         
           
-            <p>360<br>1.amd和cmd<br>2.async/await原理<br>3.computed实现原理<br>4.响应式原理<br>5.transition（图标）<br>6.首屏白屏优化<br>7.数组降维并去重<br>8.diff算法<br>9.webpack proxy跨域原理<br>10.cors怎么设置<br>11.$emit/$on实现<br>12.能否自己实现发布订阅模式<br>13.懒加载(done)<br>14.html转成vnode<br>15.url和uri的区别</p>
-<p>1.vue首屏加载优化<br>2.异步组件<br>3.事件循环（宏任务、微任务有哪些）<br>4.webpack跨域 proxy ,其他跨域<br>5.http2.0特点、<br>6.0.1+0.2 !=0.3<br>7.css优化、提升性能<br>8.url输入发生了什么<br>9.https原理<br>10.网络安全（xss，csrf）<br>11.新的项目怎么开始（技术架构）<br>12.地图api<br>13.前端新技术<br>14.箭头函数this指向<br>15.weakSet和set的区别<br>16.数组遍历的方法<br>17.reduce用法<br>18.vue-cli脚手架的理解<br>19.vuex的数据流动<br>20.vue的通信<br>21.前后端接口联调</p>
-
-          
+          3601.amd和cmd2.async/await原理3.computed实现原理4.响应式原理5.transition（图标）6.首屏白屏优化7.数组降维并去重8.diff算法9.webpack proxy跨域原理10.cors怎么设置11.$emit/$on实现12.能否自己实现发布订阅模式13
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/05/07/%E4%B8%80%E4%BA%9B%E9%9D%A2%E8%AF%95%E9%A2%98/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -485,27 +490,22 @@
       
         
           
-            <p>一.  Vue和React的区别<br>1.监听数据变化的实现原理不同。</p>
-<ul>
-<li>Vue通过数据劫持，能精确快速的计算出虚拟DOM的差异。在渲染的过程中，会跟踪每一个组件的依赖关系，不需要重新渲染整个组件树。</li>
-<li>React默认是通过比较引用的方式进行的。</li>
-</ul>
-<p>2.数据流向不同<br>3.模板渲染方式不同</p>
-<ul>
-<li>React使用jsx渲染</li>
-<li>Vue使用模板语法</li>
-</ul>
-<p>二.Vue的nextTick的原理？<br>Vue是异步修改DOM并不鼓励直接接触DOM，使用nextTick后的回调。利用了事件循环的原理，把要执行的任务推到一个队列中，在下一次tick同步执行。</p>
-<p>三.Vue的响应式系统</p>
-<ul>
-<li>任何一个Vue Component都有一个与之对应的Watcher实例</li>
-<li>Vue的data上的属性会被添加getter和setter</li>
-<li>当Vue Component render函数被执行时，getter方法会被调用，此时Vue会记录此Vue Component所依赖的所有data。(此过程为依赖收集)</li>
-</ul>
-<p>五.什么是MVVM？<br>Model：数据模型。<br>View：视图层。<br>ViewModel：Model和View之间的桥梁，处理具体的业务逻辑。<br>优点：代码解耦、提高可测试性、自动更新dom<br>缺点：bug难调试、数据大可维护性差。</p>
-<p>六.Vue生命周期<br>其中created阶段组件实例已经创建，可以访问data、computed、watch、methods以及事件回调等，beforeMount阶段在挂载Dom之前被调用，调用相关的render函数，mounted阶段dom挂载完毕。<br>七.computed和watch的区别<br>computed：computed是计算属性，一般用于计算值，主要用于简化模板内的复杂运算。<br>computed有缓存性，在getter后会缓存，只有在依赖的属性值改变之后才会改变<br>watch：当监听后需要处理业务逻辑时用到<br>八.Proxy的优势<br>可以直接监听对象而非属性，可以直接监听数组的变化，有多种拦截方法。<br>proxy会返回新的对象，我们可以操作新的对象达到目的，而Object.defineProperty只能遍历对象的属性直接修改。</p>
+          一.  Vue和React的区别1.监听数据变化的实现原理不同。
 
-          
+Vue通过数据劫持，能精确快速的计算出虚拟DOM的差异。在渲染的过程中，会跟踪每一个组件的依赖关系，不需要重新渲染整个组件树。
+React默认是通过比较引用的方式进行的。
+
+2.数据流向不同3.模板渲染方式不同
+
+React使用js
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/04/22/Vue/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -645,28 +645,18 @@
       
         
           
-            <h3 id="前端性能优化？"><a href="#前端性能优化？" class="headerlink" title="前端性能优化？"></a>前端性能优化？</h3><h4 id="网络相关"><a href="#网络相关" class="headerlink" title="网络相关"></a>网络相关</h4><p>1.代码压缩，减少HTTP请求<br>2.浏览器缓存：<br>强缓存：expires、cache-control<br>协商缓存：Last-Modified 和 If-Modified-Since、ETag 和 If-None-Match<br>3.DNS预解析</p>
-<link rel="**dns-prefetch**" href="//yuchengkai.cn" />
-4.预加载：<link rel="preload" href="http://example.com" />
-会强制浏览器请求资源，不会阻塞onload事件，可以在一定程度上降低首屏加载的时间
+          前端性能优化？网络相关1.代码压缩，减少HTTP请求2.浏览器缓存：强缓存：expires、cache-control协商缓存：Last-Modified 和 If-Modified-Since、ETag 和 If-None-Match3.DNS预解析
 
-<h4 id="优化渲染过程"><a href="#优化渲染过程" class="headerlink" title="优化渲染过程"></a>优化渲染过程</h4><p>1.懒执行<br>将某些逻辑延迟到使用后再计算，某些逻辑不需要在首屏就使用的，可以使用懒执行。一般可以使用定时器或事件调用来唤醒。<br>2.懒加载<br>懒加载就是将不关键的资源延后加载。<br>图片为例：只在定义区域内加载图片，先设置src属性为一张占位图，将真实的图片资源放入自定义属性中，<br>当进入定义区域内，将自定义属性替换为src属性，这样图片就会下载资源，实现懒加载。</p>
-<h4 id="文件优化"><a href="#文件优化" class="headerlink" title="文件优化"></a>文件优化</h4><p>1.图片优化（减少像素点，减少每个像素点能显示的颜色）</p>
-<ul>
-<li>修饰类图片可以使用css代替</li>
-<li>小图片使用base64</li>
-<li>雪碧图</li>
-<li>选择正确的图片格式：小图使用png格式，图标可以用svg代替，照片用jpg</li>
-</ul>
-<p>2.其他文件</p>
-<ul>
-<li>css文件放在head</li>
-<li>服务器开启文件压缩功能</li>
-<li>将script放在body的底部，因为 JS 文件执行会阻塞渲染。可以给script加上defer，表示文件会并行下载，会在html解析完后顺序执行。async会在加载后立即执行。</li>
-</ul>
-<p>静态资源使用CDN加载。</p>
-
-          
+4.预加载：
+会强制浏览器请求资源，不会阻塞
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/04/14/%E5%89%8D%E7%AB%AF%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -806,71 +796,17 @@
       
         
           
-            <h3 id="1-js的基本数据结构："><a href="#1-js的基本数据结构：" class="headerlink" title="1.js的基本数据结构："></a>1.js的基本数据结构：</h3><p>string，undefind，null，symbol，boolean，number</p>
-<h3 id="2-原型："><a href="#2-原型：" class="headerlink" title="2.原型："></a>2.原型：</h3><p>每个对象都有一个——proto——属性，指向原型，由他连接原型与对象，原型里又有prototype属性，该属性的constructor指回对象的构造函数形成一个闭环。</p>
-<h3 id="3-原型链："><a href="#3-原型链：" class="headerlink" title="3.原型链："></a>3.原型链：</h3><p>每个对象都有<strong>proto</strong>属性，指向了创建了该对象的构造函数的原型，<strong>proto</strong>将对象连接起来形成原型链。用来实现继承和共享属性。</p>
-<h3 id="4-执行上下文"><a href="#4-执行上下文" class="headerlink" title="4.执行上下文"></a>4.执行上下文</h3><p>全局上下文，函数上下文，eval()上下文</p>
-<h3 id="5-闭包："><a href="#5-闭包：" class="headerlink" title="5.闭包："></a>5.闭包：</h3><p>父函数在销毁的时候子函数仍然可以访问父函数中的变量对象，这样的函数称为闭包。</p>
-<h3 id="6-script引入方式："><a href="#6-script引入方式：" class="headerlink" title="6.script引入方式："></a>6.script引入方式：</h3><ul>
-<li><p>html静态引入，动态引入</p>
-</li>
-<li><p>defer：在html加载后执行，按照顺序执行</p>
-</li>
-<li><p>async：异步加载，会阻塞渲染</p>
-<h3 id="7-对象的拷贝"><a href="#7-对象的拷贝" class="headerlink" title="7.对象的拷贝"></a>7.对象的拷贝</h3><p>（1）浅拷贝：</p>
-</li>
-<li><p>Object.assign(),</p>
-</li>
-<li><p>(…)展开运算符<br>（2）深拷贝：</p>
-</li>
-<li><p>Json.parsr(Json.stringify(obj))<br>缺点：当存在undefind或symbol时，无法拷贝，无法序列化函数，具有循环引用的对象时，会报错。</p>
-</li>
-<li><p>递归拷贝</p>
-<h3 id="8-new运算符的过程："><a href="#8-new运算符的过程：" class="headerlink" title="8.new运算符的过程："></a>8.new运算符的过程：</h3></li>
-<li><p>创建一个新的对象</p>
-</li>
-<li><p>链接到原型上：obj.__ proto __ = Con.prototype</p>
-</li>
-<li><p>绑定this:apply(this)</p>
-</li>
-<li><p>返回新的对象</p>
-<h3 id="9-instanceof原理"><a href="#9-instanceof原理" class="headerlink" title="9.instanceof原理"></a>9.instanceof原理</h3><p>判断能否在原型链中找到该构造函数的prototype属性所指向的原型对象</p>
-<h3 id="10-继承"><a href="#10-继承" class="headerlink" title="10.继承"></a>10.继承</h3><p>原型链继承，构造函数继承，组合继承</p>
-<h3 id="11-类型转换"><a href="#11-类型转换" class="headerlink" title="11.类型转换"></a>11.类型转换</h3></li>
-<li><p>‘-‘,’*’,’/‘ 一律转换为数字后计算</p>
-</li>
-<li><p>数字 + 字符串 = 字符串， 运算顺序是从左到右<br>数字 + 对象， 优先调用对象的valueOf -&gt; toString<br>数字 + boolean/null -&gt; 数字<br>数字 + undefined -&gt; NaN</p>
-</li>
-</ul>
-<h3 id="12-防抖与节流"><a href="#12-防抖与节流" class="headerlink" title="12.防抖与节流"></a>12.防抖与节流</h3><ul>
-<li>防抖 (debounce): 将多次高频操作优化为只在最后一次执行，通常使用的场景是：用户输入，只需再输入完成后做一次输入校验即可。</li>
-<li>节流：每隔一段时间执行一次，降低频率，将高频操作转换为低频操作。使用场景：滚动条事件。<h3 id="13-this的指向"><a href="#13-this的指向" class="headerlink" title="13.this的指向"></a>13.this的指向</h3>this指向与函数的运行环境有关（谁调用了，就指向谁）<br>改变this的指向：</li>
-<li>call: fn.call(target, 1, 2)</li>
-<li>apply: fn.apply(target, [1,2])</li>
-<li>bind: fn.bind(target, 1, 2)<h3 id="14-es6-es7"><a href="#14-es6-es7" class="headerlink" title="14.es6/es7"></a>14.es6/es7</h3></li>
-</ul>
-<ul>
-<li>声明<ul>
-<li>let/const：块级作用域，不存在变量提升，暂时性死区，不允许重复声明</li>
-<li>const：定义常量，无法修改<br>暂时性死区：声明的变量被绑定在该区域，不受外部影响。</li>
-</ul>
-</li>
-<li>解构赋值</li>
-<li>class/extends 类的声明与继承</li>
-<li>Set</li>
-<li>异步：<ul>
-<li>promise</li>
-<li>gengerator<h3 id="15-babel编译原理"><a href="#15-babel编译原理" class="headerlink" title="15.babel编译原理"></a>15.babel编译原理</h3></li>
-</ul>
-</li>
-</ul>
-<ul>
-<li>babylon将es6/es7转换为AST（抽象语法树 (Abstract Syntax Tree)，是将代码逐字母解析成 树状对象 的形式）</li>
-<li>babel-traverse 对 AST 进行遍历转译，得到新的 AST</li>
-<li>新 AST 通过 babel-generator 转换成 ES5<h3 id="16-数组api"><a href="#16-数组api" class="headerlink" title="16.数组api"></a>16.数组api</h3></li>
-</ul>
-
-          
+          1.js的基本数据结构：string，undefind，null，symbol，boolean，number
+2.原型：每个对象都有一个——proto——属性，指向原型，由他连接原型与对象，原型里又有prototype属性，该属性的constructor指回对象的构造函数形成一个闭环。
+3.原型链：
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/04/11/javascript/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1010,84 +946,17 @@
       
         
           
-            <h3 id="什么是DOCTYPE及作用："><a href="#什么是DOCTYPE及作用：" class="headerlink" title="什么是DOCTYPE及作用："></a>什么是DOCTYPE及作用：</h3><p>DOCTYPE是用来声明文档类型和DTD规范<br>HTML5 <!DOCTYPE html></p>
-<h3 id="浏览器渲染过程"><a href="#浏览器渲染过程" class="headerlink" title="浏览器渲染过程"></a>浏览器渲染过程</h3><p>1.处理HTML并构建DOM树<br>2.处理CSS构建CSSOM树<br>3.将DOM与CSSOM树合并成一个渲染树<br>4.根据渲染树来布局，计算每个节点的位置<br>5.绘制并显示在屏幕上</p>
-<h3 id="重排reflow"><a href="#重排reflow" class="headerlink" title="重排reflow"></a>重排reflow</h3><p>定义： 布局或者几何属性需要改变<br>触发条件：</p>
-<ul>
-<li>增加、删除、修改DOM节点</li>
-<li>移动DOM的位置（动画）</li>
-<li>改变窗口大小的时候，或者滚动的时候</li>
-<li>修改网页的默认文字<h3 id="重绘repaint"><a href="#重绘repaint" class="headerlink" title="重绘repaint"></a>重绘repaint</h3>定义：当节点需要更改外观而不会影响布局<br>触发条件：CSS改变<h3 id="跨标签通讯"><a href="#跨标签通讯" class="headerlink" title="跨标签通讯"></a>跨标签通讯</h3></li>
-<li>通过父页面window.open()和子页面postMessage</li>
-<li>同域下共享的localstoragr与监听window.onstorage</li>
-<li>设置cookie与不断轮询脏检查（setinterval）</li>
-<li>借助服务端或中间层<h3 id="跨域"><a href="#跨域" class="headerlink" title="跨域"></a>跨域</h3></li>
-</ul>
-<ol>
-<li>jsonp 通过script标签指向一个需要访问的地址并提供一个回调函数来接收数据（只限GET）</li>
-<li>cors 跨域资源共享 服务端设置Access-Control-Allow-Origin</li>
-<li>document.domain<br>只适用于二级域名相同的情况下<br>给页面添加 document.domain = ‘test.com’ </li>
-<li>postMessage<br>嵌入的第三方页面数据，一个页面发送消息，另一个页面接受。</li>
-</ol>
-<h3 id="垃圾回收机制"><a href="#垃圾回收机制" class="headerlink" title="垃圾回收机制"></a>垃圾回收机制</h3><p>垃圾回收：将内存中不再使用的数据进行清理，释放出内存空间。</p>
-<ul>
-<li>新生代算法：用于存活较短的对象</li>
-<li>老生代算法：用于存活时间较长的</li>
-<li>对象</li>
-</ul>
-<h3 id="内存泄露"><a href="#内存泄露" class="headerlink" title="内存泄露"></a>内存泄露</h3><ul>
-<li>意外的全局变量：无法被回收</li>
-<li>定时器：未被正确关闭，导致所引用的变量无法被释放</li>
-<li>事件监听没有被正确销毁</li>
-<li>闭包</li>
-<li>dom引用</li>
-</ul>
-<h3 id="HTTP1-0和2-0的区别"><a href="#HTTP1-0和2-0的区别" class="headerlink" title="HTTP1.0和2.0的区别"></a>HTTP1.0和2.0的区别</h3><p>相对于HTTP1.0，HTTP1.1的优化：</p>
-<ul>
-<li><p>1.0协议缺陷：</p>
-<ul>
-<li>无法复用链接，完成即断开，重新慢启动和TCP3次握手</li>
-<li>线头阻塞，导致请求之前互相影响</li>
-</ul>
-</li>
-<li><p>1.1改进：</p>
-<ul>
-<li>长连接（keep-alive），复用</li>
-<li>Host头处理</li>
-<li>新增断电续传、身份认证、错误通知的管理、增加一些cache缓存</li>
-</ul>
-</li>
-<li><p>2.0：</p>
-<ul>
-<li>多路复用</li>
-<li>支持二进制传送</li>
-<li>头部压缩，减小传输的体积</li>
-<li>支持服务端推送</li>
-</ul>
-</li>
-<li><p>HTTPS：</p>
-<ul>
-<li>证书（公钥）</li>
-<li>SSL加密</li>
-<li>端口443</li>
-</ul>
-</li>
-</ul>
-<h3 id="安全"><a href="#安全" class="headerlink" title="安全"></a>安全</h3><ul>
-<li>XSS攻击(跨站脚本攻击):注入恶意代码<ul>
-<li>cookie设置httpOnly</li>
-<li>转义页面上的输入内容和输出内容</li>
-</ul>
-</li>
-<li>CSRF(跨站请求伪造)<ul>
-<li>不让第三方网站访问用户Cookie</li>
-<li>阻止第三方网站请求接口</li>
-<li>验证token</li>
-</ul>
-</li>
-</ul>
-
-          
+          什么是DOCTYPE及作用：DOCTYPE是用来声明文档类型和DTD规范HTML5 
+浏览器渲染过程1.处理HTML并构建DOM树2.处理CSS构建CSSOM树3.将DOM与CSSOM树合并成一个渲染树4.根据渲染树来布局，计算每个节点的位置5.绘制并显示在屏幕上
+重排reflow定义： 布局或者几
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/04/04/%E6%B5%8F%E8%A7%88%E5%99%A8/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1227,19 +1096,21 @@
       
         
           
-            <p>优化：减少webpack的打包时间，</p>
-<ul>
-<li>优化loader的搜索范围，</li>
-<li>HappyPack 可以将 Loader 的同步执行转换为并行的</li>
-<li>DllPlugin 可以将特定的类库提前打包然后引入</li>
-<li>代码压缩</li>
-<li>按需加载：当使用的时候再去下载对应文件，返回一个 Promise，当 Promise 成功以后去执行回调</li>
-<li>Scope Hoisting 会分析出模块之间的依赖关系，尽可能的把打包出来的模块合并到一个函数中去</li>
-<li>tree-shaking</li>
-<li>babel： 对不同格式文件的处理、es6 =&gt;es5, ts=&gt;es5, sass=&gt;css,图片处理</li>
-</ul>
+          优化：减少webpack的打包时间，
 
-          
+优化loader的搜索范围，
+HappyPack 可以将 Loader 的同步执行转换为并行的
+DllPlugin 可以将特定的类库提前打包然后引入
+代码压缩
+按需加载：当使用的时候再去下载对应文件，返回一个 Promise，当 Promise 成功以后去执行
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/04/01/Webpack/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1379,30 +1250,17 @@
       
         
           
-            <p>项目中遇到了点聚合，并且点聚合样式和 Marker 样式都需要自定义</p>
-<p>首先，只需在 marker 的 content 中加入自定义的 html 内容即可。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">marker &#x3D; new AMap.Marker(&#123;</span><br><span class="line">  position: lnglat,</span><br><span class="line">  content: &#39;&lt;div style&#x3D;&quot;height: 24px; width: 24px; &quot;&gt;&lt;img style&#x3D;&quot;width:60px;height:26px&quot; src&#x3D;&quot;marker.png&quot;&gt;&lt;&#x2F;div&gt;&#39;,</span><br><span class="line">  offset: new AMap.Pixel(-25, -15),</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-
-<p>然后将points批量加入到markers,并且可以添加一些属性到marker中</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">marker.data &#x3D; points[i].data</span><br><span class="line">marker.lnglat &#x3D; points[i].lnglat</span><br></pre></td></tr></table></figure>
-
-<p>给marker添加事件</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">addEventHandler(marker);</span><br></pre></td></tr></table></figure>
-
-<p>添加marker最终代码为</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">for (var i &#x3D; 0; i &lt; points.length; i +&#x3D; 1) &#123;</span><br><span class="line">  marker &#x3D; new AMap.Marker(&#123;</span><br><span class="line">    position: points[i].lnglat,</span><br><span class="line">    content: &#39;&lt;div style&#x3D;&quot;height: 24px; width: 24px; &quot;&gt;&lt;img style&#x3D;&quot;width:60px;height:26px&quot; src&#x3D;&quot;marker.png&quot;&gt;&lt;&#x2F;div&gt;&#39;,</span><br><span class="line">    offset: new AMap.Pixel(-25, -15),</span><br><span class="line">  &#125;)</span><br><span class="line">  marker.data &#x3D; points[i].data</span><br><span class="line">  marker.lnglat &#x3D; points[i].lnglat</span><br><span class="line">  addEventHandler(marker);</span><br><span class="line">  markers.push(marker);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-<p>marker的事件处理</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">function addEventHandler(marker) &#123;</span><br><span class="line">  var infoWindow;</span><br><span class="line">  marker.on(&quot;mouseover&quot;, function (e) &#123;</span><br><span class="line">      marker.setPosition(e.target.lnglat)</span><br><span class="line">      var info &#x3D; []</span><br><span class="line">      info.push(&#39;&lt;div class&#x3D;\&#39;markbox\&#39;&gt;&lt;p style&#x3D;&quot;margin:0&quot; class&#x3D;\&#39;input-item\&#39;&gt;data：&#39; + e.target.data + &#39;&lt;&#x2F;p&gt;&#39;)</span><br><span class="line"></span><br><span class="line">      infoWindow &#x3D; new AMap.InfoWindow(&#123;</span><br><span class="line">          content: info.join(&#39;&#39;),  &#x2F;&#x2F;使用默认信息窗体框样式，显示信息内容</span><br><span class="line">          offset: new AMap.Pixel(0, 0),</span><br><span class="line">          autoMove: false, &#x2F;&#x2F;是否自动移动地图显示完整的InfoWindow</span><br><span class="line">          closeWhenClickMap: true &#x2F;&#x2F; 点击地图是否关闭</span><br><span class="line">      &#125;)</span><br><span class="line"></span><br><span class="line">      infoWindow.open(map, e.target.lnglat)</span><br><span class="line">  &#125;)</span><br><span class="line">  marker.on(&#39;mouseout&#39;, function (e) &#123;</span><br><span class="line">      infoWindow.close()</span><br><span class="line">  &#125;)</span><br><span class="line">  &#x2F;&#x2F;点击marker</span><br><span class="line">  marker.on(&#39;click&#39;, function (e) &#123;</span><br><span class="line">      &#x2F;&#x2F; xxx</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-<p>这样marker就创建完成了，但是如果marker数量过多，在地图中显示会很乱，所以需要用到点聚合</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">addCluster();</span><br><span class="line">&#x2F;&#x2F;添加聚合点</span><br><span class="line">function addCluster() &#123;</span><br><span class="line">  if (cluster) &#123;</span><br><span class="line">      map.remove(cluster);</span><br><span class="line">  &#125;</span><br><span class="line">  cluster &#x3D; new AMap.MarkerClusterer(map, markers, &#123;</span><br><span class="line">      gridSize: 200,</span><br><span class="line">      maxZoom: 14, &#x2F;&#x2F; 最大zoom不再聚合</span><br><span class="line">      renderClusterMarker: _renderClusterMarker &#x2F;&#x2F; 完全自定义样式</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>自定义点聚合样式</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&#96;&#96;&#96;</span><br><span class="line">&#x2F;&#x2F;这里可以完全自定义html和样式</span><br><span class="line">var _renderClusterMarker &#x3D; function (context) &#123;</span><br><span class="line">    var div &#x3D; document.createElement(&#39;div&#39;);</span><br><span class="line">    var size &#x3D; Math.round(30 + Math.pow(context.count &#x2F; zwlCount, 1 &#x2F; 5) * 20);</span><br><span class="line">    div.style.width &#x3D; div.style.height &#x3D; size &#x2F; 2 + &#39;px&#39;;</span><br><span class="line">    div.innerHTML &#x3D; &#39;&lt;div&gt;&lt;span&gt;&#39; + context.count + &#39;&lt;&#x2F;span&gt;&lt;&#x2F;div&gt;&#39;;</span><br><span class="line">    div.style.lineHeight &#x3D; size + &#39;px&#39;;</span><br><span class="line">    div.style.color &#x3D; &#39;#fff&#39;;</span><br><span class="line">    div.style.fontSize &#x3D; &#39;14px&#39;;</span><br><span class="line">    div.style.textAlign &#x3D; &#39;center&#39;;</span><br><span class="line">    context.marker.setOffset(new AMap.Pixel(-size &#x2F; 2, -size &#x2F; 2));</span><br><span class="line">    context.marker.setContent(div)</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-          
+          项目中遇到了点聚合，并且点聚合样式和 Marker 样式都需要自定义
+首先，只需在 marker 的 content 中加入自定义的 html 内容即可。
+12345marker &#x3D; new AMap.Marker(&#123;  position: lnglat,  content: &
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/03/19/%E9%AB%98%E5%BE%B7%E5%9C%B0%E5%9B%BE%E7%82%B9%E8%81%9A%E5%90%88%E7%9A%84%E4%BD%BF%E7%94%A8/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1542,10 +1400,17 @@
       
         
           
-            <h3 id="JavaScript中数组的迭代方法-forEach、map、filter、reduce、every、some"><a href="#JavaScript中数组的迭代方法-forEach、map、filter、reduce、every、some" class="headerlink" title="JavaScript中数组的迭代方法: forEach、map、filter、reduce、every、some"></a>JavaScript中数组的迭代方法: forEach、map、filter、reduce、every、some</h3><p>（掘金上看到的，存下来）</p>
-<p><img src="https://tva1.sinaimg.cn/large/00831rSTgy1gcieoqfl9yj30m82gwjt5.jpg" alt=""></p>
+          JavaScript中数组的迭代方法: forEach、map、filter、reduce、every、some（掘金上看到的，存下来）
+
 
           
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/03/05/JavaScript%E4%B8%AD%E6%95%B0%E7%BB%84%E7%9A%84%E8%BF%AD%E4%BB%A3%E6%96%B9%E6%B3%95/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
