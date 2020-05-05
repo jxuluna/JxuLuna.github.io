@@ -79,19 +79,17 @@
 
 
 
-<meta name="description" content="JavaScript中数组的迭代方法: forEach、map、filter、reduce、every、some（掘金上看到的，存下来）">
+<meta name="description" content="前端性能优化？网络相关1.代码压缩，减少HTTP请求2.浏览器缓存：强缓存：expires、cache-control协商缓存：Last-Modified 和 If-Modified-Since、ETag 和 If-None-Match3.DNS预解析  4.预加载： 会强制浏览器请求资源，不会阻塞onload事件，可以在一定程度上降低首屏加载的时间  优化渲染过程1.懒执行将某些逻辑延迟到使用后">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JavaScript中数组的迭代方法">
-<meta property="og:url" content="http://yoursite.com/2020/03/05/JavaScript%E4%B8%AD%E6%95%B0%E7%BB%84%E7%9A%84%E8%BF%AD%E4%BB%A3%E6%96%B9%E6%B3%95/index.html">
+<meta property="og:title" content="面试准备之前端性能优化">
+<meta property="og:url" content="http://yoursite.com/2020/04/14/%E5%89%8D%E7%AB%AF%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/index.html">
 <meta property="og:site_name" content="JxuLuna">
-<meta property="og:description" content="JavaScript中数组的迭代方法: forEach、map、filter、reduce、every、some（掘金上看到的，存下来）">
+<meta property="og:description" content="前端性能优化？网络相关1.代码压缩，减少HTTP请求2.浏览器缓存：强缓存：expires、cache-control协商缓存：Last-Modified 和 If-Modified-Since、ETag 和 If-None-Match3.DNS预解析  4.预加载： 会强制浏览器请求资源，不会阻塞onload事件，可以在一定程度上降低首屏加载的时间  优化渲染过程1.懒执行将某些逻辑延迟到使用后">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://tva1.sinaimg.cn/large/00831rSTgy1gcieoqfl9yj30m82gwjt5.jpg">
-<meta property="article:published_time" content="2020-03-04T17:26:29.000Z">
-<meta property="article:modified_time" content="2020-03-04T17:26:29.000Z">
+<meta property="article:published_time" content="2020-04-14T15:12:00.000Z">
+<meta property="article:modified_time" content="2020-05-05T10:21:33.822Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://tva1.sinaimg.cn/large/00831rSTgy1gcieoqfl9yj30m82gwjt5.jpg">
 
 
 
@@ -121,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2020/03/05/JavaScript中数组的迭代方法/"/>
+  <link rel="canonical" href="http://yoursite.com/2020/04/14/前端性能优化/"/>
 
 
 
 
 
-  <title>JavaScript中数组的迭代方法 | JxuLuna</title>
+  <title>面试准备之前端性能优化 | JxuLuna</title>
   
 
 
@@ -264,7 +262,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/05/JavaScript%E4%B8%AD%E6%95%B0%E7%BB%84%E7%9A%84%E8%BF%AD%E4%BB%A3%E6%96%B9%E6%B3%95/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/14/%E5%89%8D%E7%AB%AF%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="John Doe">
@@ -281,7 +279,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">JavaScript中数组的迭代方法</h1>
+          <h1 class="post-title" itemprop="name headline">面试准备之前端性能优化</h1>
         
 
         <div class="post-meta">
@@ -293,8 +291,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-03-05T01:26:29+08:00">
-                2020-03-05
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-04-14T23:12:00+08:00">
+                2020-04-14
               </time>
             
 
@@ -316,8 +314,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/javaScript/" itemprop="url" rel="index">
-                    <span itemprop="name">javaScript</span>
+                  <a href="/categories/%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87/" itemprop="url" rel="index">
+                    <span itemprop="name">面试准备</span>
                   </a>
                 </span>
 
@@ -353,8 +351,26 @@
       
 
       
-        <h3 id="JavaScript中数组的迭代方法-forEach、map、filter、reduce、every、some"><a href="#JavaScript中数组的迭代方法-forEach、map、filter、reduce、every、some" class="headerlink" title="JavaScript中数组的迭代方法: forEach、map、filter、reduce、every、some"></a>JavaScript中数组的迭代方法: forEach、map、filter、reduce、every、some</h3><p>（掘金上看到的，存下来）</p>
-<p><img src="https://tva1.sinaimg.cn/large/00831rSTgy1gcieoqfl9yj30m82gwjt5.jpg" alt=""></p>
+        <h3 id="前端性能优化？"><a href="#前端性能优化？" class="headerlink" title="前端性能优化？"></a>前端性能优化？</h3><h4 id="网络相关"><a href="#网络相关" class="headerlink" title="网络相关"></a>网络相关</h4><p>1.代码压缩，减少HTTP请求<br>2.浏览器缓存：<br>强缓存：expires、cache-control<br>协商缓存：Last-Modified 和 If-Modified-Since、ETag 和 If-None-Match<br>3.DNS预解析</p>
+<link rel="**dns-prefetch**" href="//yuchengkai.cn" />
+4.预加载：<link rel="preload" href="http://example.com" />
+会强制浏览器请求资源，不会阻塞onload事件，可以在一定程度上降低首屏加载的时间
+
+<h4 id="优化渲染过程"><a href="#优化渲染过程" class="headerlink" title="优化渲染过程"></a>优化渲染过程</h4><p>1.懒执行<br>将某些逻辑延迟到使用后再计算，某些逻辑不需要在首屏就使用的，可以使用懒执行。一般可以使用定时器或事件调用来唤醒。<br>2.懒加载<br>懒加载就是将不关键的资源延后加载。<br>图片为例：只在定义区域内加载图片，先设置src属性为一张占位图，将真实的图片资源放入自定义属性中，<br>当进入定义区域内，将自定义属性替换为src属性，这样图片就会下载资源，实现懒加载。</p>
+<h4 id="文件优化"><a href="#文件优化" class="headerlink" title="文件优化"></a>文件优化</h4><p>1.图片优化（减少像素点，减少每个像素点能显示的颜色）</p>
+<ul>
+<li>修饰类图片可以使用css代替</li>
+<li>小图片使用base64</li>
+<li>雪碧图</li>
+<li>选择正确的图片格式：小图使用png格式，图标可以用svg代替，照片用jpg</li>
+</ul>
+<p>2.其他文件</p>
+<ul>
+<li>css文件放在head</li>
+<li>服务器开启文件压缩功能</li>
+<li>将script放在body的底部，因为 JS 文件执行会阻塞渲染。可以给script加上defer，表示文件会并行下载，会在html解析完后顺序执行。async会在加载后立即执行。</li>
+</ul>
+<p>静态资源使用CDN加载。</p>
 
       
     </div>
@@ -379,14 +395,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2020/04/11/javascript/" rel="next" title="面试准备之JS">
+                <i class="fa fa-chevron-left"></i> 面试准备之JS
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2020/03/19/%E9%AB%98%E5%BE%B7%E5%9C%B0%E5%9B%BE%E7%82%B9%E8%81%9A%E5%90%88%E7%9A%84%E4%BD%BF%E7%94%A8/" rel="prev" title="高德地图点聚合的使用">
-                高德地图点聚合的使用 <i class="fa fa-chevron-right"></i>
+              <a href="/2020/04/22/Vue/" rel="prev" title="面试准备之Vue">
+                面试准备之Vue <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -510,7 +530,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#JavaScript中数组的迭代方法-forEach、map、filter、reduce、every、some"><span class="nav-number">1.</span> <span class="nav-text">JavaScript中数组的迭代方法: forEach、map、filter、reduce、every、some</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#前端性能优化？"><span class="nav-number">1.</span> <span class="nav-text">前端性能优化？</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#网络相关"><span class="nav-number">1.1.</span> <span class="nav-text">网络相关</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#优化渲染过程"><span class="nav-number">1.2.</span> <span class="nav-text">优化渲染过程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#文件优化"><span class="nav-number">1.3.</span> <span class="nav-text">文件优化</span></a></li></ol></li></ol></div>
             
 
           </div>

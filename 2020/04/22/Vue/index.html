@@ -79,19 +79,17 @@
 
 
 
-<meta name="description" content="JavaScript中数组的迭代方法: forEach、map、filter、reduce、every、some（掘金上看到的，存下来）">
+<meta name="description" content="一.  Vue和React的区别1.监听数据变化的实现原理不同。  Vue通过数据劫持，能精确快速的计算出虚拟DOM的差异。在渲染的过程中，会跟踪每一个组件的依赖关系，不需要重新渲染整个组件树。 React默认是通过比较引用的方式进行的。  2.数据流向不同3.模板渲染方式不同  React使用jsx渲染 Vue使用模板语法  二.Vue的nextTick的原理？Vue是异步修改DOM并不鼓励直接">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JavaScript中数组的迭代方法">
-<meta property="og:url" content="http://yoursite.com/2020/03/05/JavaScript%E4%B8%AD%E6%95%B0%E7%BB%84%E7%9A%84%E8%BF%AD%E4%BB%A3%E6%96%B9%E6%B3%95/index.html">
+<meta property="og:title" content="面试准备之Vue">
+<meta property="og:url" content="http://yoursite.com/2020/04/22/Vue/index.html">
 <meta property="og:site_name" content="JxuLuna">
-<meta property="og:description" content="JavaScript中数组的迭代方法: forEach、map、filter、reduce、every、some（掘金上看到的，存下来）">
+<meta property="og:description" content="一.  Vue和React的区别1.监听数据变化的实现原理不同。  Vue通过数据劫持，能精确快速的计算出虚拟DOM的差异。在渲染的过程中，会跟踪每一个组件的依赖关系，不需要重新渲染整个组件树。 React默认是通过比较引用的方式进行的。  2.数据流向不同3.模板渲染方式不同  React使用jsx渲染 Vue使用模板语法  二.Vue的nextTick的原理？Vue是异步修改DOM并不鼓励直接">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://tva1.sinaimg.cn/large/00831rSTgy1gcieoqfl9yj30m82gwjt5.jpg">
-<meta property="article:published_time" content="2020-03-04T17:26:29.000Z">
-<meta property="article:modified_time" content="2020-03-04T17:26:29.000Z">
+<meta property="article:published_time" content="2020-04-22T15:56:10.000Z">
+<meta property="article:modified_time" content="2020-05-05T10:21:20.220Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://tva1.sinaimg.cn/large/00831rSTgy1gcieoqfl9yj30m82gwjt5.jpg">
 
 
 
@@ -121,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2020/03/05/JavaScript中数组的迭代方法/"/>
+  <link rel="canonical" href="http://yoursite.com/2020/04/22/Vue/"/>
 
 
 
 
 
-  <title>JavaScript中数组的迭代方法 | JxuLuna</title>
+  <title>面试准备之Vue | JxuLuna</title>
   
 
 
@@ -264,7 +262,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/05/JavaScript%E4%B8%AD%E6%95%B0%E7%BB%84%E7%9A%84%E8%BF%AD%E4%BB%A3%E6%96%B9%E6%B3%95/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/22/Vue/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="John Doe">
@@ -281,7 +279,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">JavaScript中数组的迭代方法</h1>
+          <h1 class="post-title" itemprop="name headline">面试准备之Vue</h1>
         
 
         <div class="post-meta">
@@ -293,8 +291,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-03-05T01:26:29+08:00">
-                2020-03-05
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-04-22T23:56:10+08:00">
+                2020-04-22
               </time>
             
 
@@ -316,8 +314,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/javaScript/" itemprop="url" rel="index">
-                    <span itemprop="name">javaScript</span>
+                  <a href="/categories/%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87/" itemprop="url" rel="index">
+                    <span itemprop="name">面试准备</span>
                   </a>
                 </span>
 
@@ -353,8 +351,25 @@
       
 
       
-        <h3 id="JavaScript中数组的迭代方法-forEach、map、filter、reduce、every、some"><a href="#JavaScript中数组的迭代方法-forEach、map、filter、reduce、every、some" class="headerlink" title="JavaScript中数组的迭代方法: forEach、map、filter、reduce、every、some"></a>JavaScript中数组的迭代方法: forEach、map、filter、reduce、every、some</h3><p>（掘金上看到的，存下来）</p>
-<p><img src="https://tva1.sinaimg.cn/large/00831rSTgy1gcieoqfl9yj30m82gwjt5.jpg" alt=""></p>
+        <p>一.  Vue和React的区别<br>1.监听数据变化的实现原理不同。</p>
+<ul>
+<li>Vue通过数据劫持，能精确快速的计算出虚拟DOM的差异。在渲染的过程中，会跟踪每一个组件的依赖关系，不需要重新渲染整个组件树。</li>
+<li>React默认是通过比较引用的方式进行的。</li>
+</ul>
+<p>2.数据流向不同<br>3.模板渲染方式不同</p>
+<ul>
+<li>React使用jsx渲染</li>
+<li>Vue使用模板语法</li>
+</ul>
+<p>二.Vue的nextTick的原理？<br>Vue是异步修改DOM并不鼓励直接接触DOM，使用nextTick后的回调。利用了事件循环的原理，把要执行的任务推到一个队列中，在下一次tick同步执行。</p>
+<p>三.Vue的响应式系统</p>
+<ul>
+<li>任何一个Vue Component都有一个与之对应的Watcher实例</li>
+<li>Vue的data上的属性会被添加getter和setter</li>
+<li>当Vue Component render函数被执行时，getter方法会被调用，此时Vue会记录此Vue Component所依赖的所有data。(此过程为依赖收集)</li>
+</ul>
+<p>五.什么是MVVM？<br>Model：数据模型。<br>View：视图层。<br>ViewModel：Model和View之间的桥梁，处理具体的业务逻辑。<br>优点：代码解耦、提高可测试性、自动更新dom<br>缺点：bug难调试、数据大可维护性差。</p>
+<p>六.Vue生命周期<br>其中created阶段组件实例已经创建，可以访问data、computed、watch、methods以及事件回调等，beforeMount阶段在挂载Dom之前被调用，调用相关的render函数，mounted阶段dom挂载完毕。<br>七.computed和watch的区别<br>computed：computed是计算属性，一般用于计算值，主要用于简化模板内的复杂运算。<br>computed有缓存性，在getter后会缓存，只有在依赖的属性值改变之后才会改变<br>watch：当监听后需要处理业务逻辑时用到<br>八.Proxy的优势<br>可以直接监听对象而非属性，可以直接监听数组的变化，有多种拦截方法。<br>proxy会返回新的对象，我们可以操作新的对象达到目的，而Object.defineProperty只能遍历对象的属性直接修改。</p>
 
       
     </div>
@@ -379,14 +394,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2020/04/14/%E5%89%8D%E7%AB%AF%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/" rel="next" title="面试准备之前端性能优化">
+                <i class="fa fa-chevron-left"></i> 面试准备之前端性能优化
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2020/03/19/%E9%AB%98%E5%BE%B7%E5%9C%B0%E5%9B%BE%E7%82%B9%E8%81%9A%E5%90%88%E7%9A%84%E4%BD%BF%E7%94%A8/" rel="prev" title="高德地图点聚合的使用">
-                高德地图点聚合的使用 <i class="fa fa-chevron-right"></i>
+              <a href="/2020/05/07/%E4%B8%80%E4%BA%9B%E9%9D%A2%E8%AF%95%E9%A2%98/" rel="prev" title="面试准备之一些面试题">
+                面试准备之一些面试题 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -439,17 +458,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -500,22 +510,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#JavaScript中数组的迭代方法-forEach、map、filter、reduce、every、some"><span class="nav-number">1.</span> <span class="nav-text">JavaScript中数组的迭代方法: forEach、map、filter、reduce、every、some</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       

@@ -79,19 +79,17 @@
 
 
 
-<meta name="description" content="JavaScript中数组的迭代方法: forEach、map、filter、reduce、every、some（掘金上看到的，存下来）">
+<meta name="description" content="1.js的基本数据结构：string，undefind，null，symbol，boolean，number 2.原型：每个对象都有一个——proto——属性，指向原型，由他连接原型与对象，原型里又有prototype属性，该属性的constructor指回对象的构造函数形成一个闭环。 3.原型链：每个对象都有proto属性，指向了创建了该对象的构造函数的原型，proto将对象连接起来形成原型链。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JavaScript中数组的迭代方法">
-<meta property="og:url" content="http://yoursite.com/2020/03/05/JavaScript%E4%B8%AD%E6%95%B0%E7%BB%84%E7%9A%84%E8%BF%AD%E4%BB%A3%E6%96%B9%E6%B3%95/index.html">
+<meta property="og:title" content="面试准备之JS">
+<meta property="og:url" content="http://yoursite.com/2020/04/11/javascript/index.html">
 <meta property="og:site_name" content="JxuLuna">
-<meta property="og:description" content="JavaScript中数组的迭代方法: forEach、map、filter、reduce、every、some（掘金上看到的，存下来）">
+<meta property="og:description" content="1.js的基本数据结构：string，undefind，null，symbol，boolean，number 2.原型：每个对象都有一个——proto——属性，指向原型，由他连接原型与对象，原型里又有prototype属性，该属性的constructor指回对象的构造函数形成一个闭环。 3.原型链：每个对象都有proto属性，指向了创建了该对象的构造函数的原型，proto将对象连接起来形成原型链。">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://tva1.sinaimg.cn/large/00831rSTgy1gcieoqfl9yj30m82gwjt5.jpg">
-<meta property="article:published_time" content="2020-03-04T17:26:29.000Z">
-<meta property="article:modified_time" content="2020-03-04T17:26:29.000Z">
+<meta property="article:published_time" content="2020-04-11T12:12:00.000Z">
+<meta property="article:modified_time" content="2020-05-05T10:21:43.217Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://tva1.sinaimg.cn/large/00831rSTgy1gcieoqfl9yj30m82gwjt5.jpg">
 
 
 
@@ -121,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2020/03/05/JavaScript中数组的迭代方法/"/>
+  <link rel="canonical" href="http://yoursite.com/2020/04/11/javascript/"/>
 
 
 
 
 
-  <title>JavaScript中数组的迭代方法 | JxuLuna</title>
+  <title>面试准备之JS | JxuLuna</title>
   
 
 
@@ -264,7 +262,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/05/JavaScript%E4%B8%AD%E6%95%B0%E7%BB%84%E7%9A%84%E8%BF%AD%E4%BB%A3%E6%96%B9%E6%B3%95/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/11/javascript/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="John Doe">
@@ -281,7 +279,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">JavaScript中数组的迭代方法</h1>
+          <h1 class="post-title" itemprop="name headline">面试准备之JS</h1>
         
 
         <div class="post-meta">
@@ -293,8 +291,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-03-05T01:26:29+08:00">
-                2020-03-05
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-04-11T20:12:00+08:00">
+                2020-04-11
               </time>
             
 
@@ -316,8 +314,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/javaScript/" itemprop="url" rel="index">
-                    <span itemprop="name">javaScript</span>
+                  <a href="/categories/%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87/" itemprop="url" rel="index">
+                    <span itemprop="name">面试准备</span>
                   </a>
                 </span>
 
@@ -353,8 +351,69 @@
       
 
       
-        <h3 id="JavaScript中数组的迭代方法-forEach、map、filter、reduce、every、some"><a href="#JavaScript中数组的迭代方法-forEach、map、filter、reduce、every、some" class="headerlink" title="JavaScript中数组的迭代方法: forEach、map、filter、reduce、every、some"></a>JavaScript中数组的迭代方法: forEach、map、filter、reduce、every、some</h3><p>（掘金上看到的，存下来）</p>
-<p><img src="https://tva1.sinaimg.cn/large/00831rSTgy1gcieoqfl9yj30m82gwjt5.jpg" alt=""></p>
+        <h3 id="1-js的基本数据结构："><a href="#1-js的基本数据结构：" class="headerlink" title="1.js的基本数据结构："></a>1.js的基本数据结构：</h3><p>string，undefind，null，symbol，boolean，number</p>
+<h3 id="2-原型："><a href="#2-原型：" class="headerlink" title="2.原型："></a>2.原型：</h3><p>每个对象都有一个——proto——属性，指向原型，由他连接原型与对象，原型里又有prototype属性，该属性的constructor指回对象的构造函数形成一个闭环。</p>
+<h3 id="3-原型链："><a href="#3-原型链：" class="headerlink" title="3.原型链："></a>3.原型链：</h3><p>每个对象都有<strong>proto</strong>属性，指向了创建了该对象的构造函数的原型，<strong>proto</strong>将对象连接起来形成原型链。用来实现继承和共享属性。</p>
+<h3 id="4-执行上下文"><a href="#4-执行上下文" class="headerlink" title="4.执行上下文"></a>4.执行上下文</h3><p>全局上下文，函数上下文，eval()上下文</p>
+<h3 id="5-闭包："><a href="#5-闭包：" class="headerlink" title="5.闭包："></a>5.闭包：</h3><p>父函数在销毁的时候子函数仍然可以访问父函数中的变量对象，这样的函数称为闭包。</p>
+<h3 id="6-script引入方式："><a href="#6-script引入方式：" class="headerlink" title="6.script引入方式："></a>6.script引入方式：</h3><ul>
+<li><p>html静态引入，动态引入</p>
+</li>
+<li><p>defer：在html加载后执行，按照顺序执行</p>
+</li>
+<li><p>async：异步加载，会阻塞渲染</p>
+<h3 id="7-对象的拷贝"><a href="#7-对象的拷贝" class="headerlink" title="7.对象的拷贝"></a>7.对象的拷贝</h3><p>（1）浅拷贝：</p>
+</li>
+<li><p>Object.assign(),</p>
+</li>
+<li><p>(…)展开运算符<br>（2）深拷贝：</p>
+</li>
+<li><p>Json.parsr(Json.stringify(obj))<br>缺点：当存在undefind或symbol时，无法拷贝，无法序列化函数，具有循环引用的对象时，会报错。</p>
+</li>
+<li><p>递归拷贝</p>
+<h3 id="8-new运算符的过程："><a href="#8-new运算符的过程：" class="headerlink" title="8.new运算符的过程："></a>8.new运算符的过程：</h3></li>
+<li><p>创建一个新的对象</p>
+</li>
+<li><p>链接到原型上：obj.__ proto __ = Con.prototype</p>
+</li>
+<li><p>绑定this:apply(this)</p>
+</li>
+<li><p>返回新的对象</p>
+<h3 id="9-instanceof原理"><a href="#9-instanceof原理" class="headerlink" title="9.instanceof原理"></a>9.instanceof原理</h3><p>判断能否在原型链中找到该构造函数的prototype属性所指向的原型对象</p>
+<h3 id="10-继承"><a href="#10-继承" class="headerlink" title="10.继承"></a>10.继承</h3><p>原型链继承，构造函数继承，组合继承</p>
+<h3 id="11-类型转换"><a href="#11-类型转换" class="headerlink" title="11.类型转换"></a>11.类型转换</h3></li>
+<li><p>‘-‘,’*’,’/‘ 一律转换为数字后计算</p>
+</li>
+<li><p>数字 + 字符串 = 字符串， 运算顺序是从左到右<br>数字 + 对象， 优先调用对象的valueOf -&gt; toString<br>数字 + boolean/null -&gt; 数字<br>数字 + undefined -&gt; NaN</p>
+</li>
+</ul>
+<h3 id="12-防抖与节流"><a href="#12-防抖与节流" class="headerlink" title="12.防抖与节流"></a>12.防抖与节流</h3><ul>
+<li>防抖 (debounce): 将多次高频操作优化为只在最后一次执行，通常使用的场景是：用户输入，只需再输入完成后做一次输入校验即可。</li>
+<li>节流：每隔一段时间执行一次，降低频率，将高频操作转换为低频操作。使用场景：滚动条事件。<h3 id="13-this的指向"><a href="#13-this的指向" class="headerlink" title="13.this的指向"></a>13.this的指向</h3>this指向与函数的运行环境有关（谁调用了，就指向谁）<br>改变this的指向：</li>
+<li>call: fn.call(target, 1, 2)</li>
+<li>apply: fn.apply(target, [1,2])</li>
+<li>bind: fn.bind(target, 1, 2)<h3 id="14-es6-es7"><a href="#14-es6-es7" class="headerlink" title="14.es6/es7"></a>14.es6/es7</h3></li>
+</ul>
+<ul>
+<li>声明<ul>
+<li>let/const：块级作用域，不存在变量提升，暂时性死区，不允许重复声明</li>
+<li>const：定义常量，无法修改<br>暂时性死区：声明的变量被绑定在该区域，不受外部影响。</li>
+</ul>
+</li>
+<li>解构赋值</li>
+<li>class/extends 类的声明与继承</li>
+<li>Set</li>
+<li>异步：<ul>
+<li>promise</li>
+<li>gengerator<h3 id="15-babel编译原理"><a href="#15-babel编译原理" class="headerlink" title="15.babel编译原理"></a>15.babel编译原理</h3></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>babylon将es6/es7转换为AST（抽象语法树 (Abstract Syntax Tree)，是将代码逐字母解析成 树状对象 的形式）</li>
+<li>babel-traverse 对 AST 进行遍历转译，得到新的 AST</li>
+<li>新 AST 通过 babel-generator 转换成 ES5<h3 id="16-数组api"><a href="#16-数组api" class="headerlink" title="16.数组api"></a>16.数组api</h3></li>
+</ul>
 
       
     </div>
@@ -379,14 +438,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2020/04/04/%E6%B5%8F%E8%A7%88%E5%99%A8/" rel="next" title="面试准备之浏览器">
+                <i class="fa fa-chevron-left"></i> 面试准备之浏览器
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2020/03/19/%E9%AB%98%E5%BE%B7%E5%9C%B0%E5%9B%BE%E7%82%B9%E8%81%9A%E5%90%88%E7%9A%84%E4%BD%BF%E7%94%A8/" rel="prev" title="高德地图点聚合的使用">
-                高德地图点聚合的使用 <i class="fa fa-chevron-right"></i>
+              <a href="/2020/04/14/%E5%89%8D%E7%AB%AF%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/" rel="prev" title="面试准备之前端性能优化">
+                面试准备之前端性能优化 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -510,7 +573,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#JavaScript中数组的迭代方法-forEach、map、filter、reduce、every、some"><span class="nav-number">1.</span> <span class="nav-text">JavaScript中数组的迭代方法: forEach、map、filter、reduce、every、some</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-js的基本数据结构："><span class="nav-number">1.</span> <span class="nav-text">1.js的基本数据结构：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-原型："><span class="nav-number">2.</span> <span class="nav-text">2.原型：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-原型链："><span class="nav-number">3.</span> <span class="nav-text">3.原型链：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-执行上下文"><span class="nav-number">4.</span> <span class="nav-text">4.执行上下文</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-闭包："><span class="nav-number">5.</span> <span class="nav-text">5.闭包：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-script引入方式："><span class="nav-number">6.</span> <span class="nav-text">6.script引入方式：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-对象的拷贝"><span class="nav-number">7.</span> <span class="nav-text">7.对象的拷贝</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-new运算符的过程："><span class="nav-number">8.</span> <span class="nav-text">8.new运算符的过程：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-instanceof原理"><span class="nav-number">9.</span> <span class="nav-text">9.instanceof原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-继承"><span class="nav-number">10.</span> <span class="nav-text">10.继承</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-类型转换"><span class="nav-number">11.</span> <span class="nav-text">11.类型转换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-防抖与节流"><span class="nav-number">12.</span> <span class="nav-text">12.防抖与节流</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#13-this的指向"><span class="nav-number">13.</span> <span class="nav-text">13.this的指向</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#14-es6-es7"><span class="nav-number">14.</span> <span class="nav-text">14.es6&#x2F;es7</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#15-babel编译原理"><span class="nav-number">15.</span> <span class="nav-text">15.babel编译原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#16-数组api"><span class="nav-number">16.</span> <span class="nav-text">16.数组api</span></a></li></ol></div>
             
 
           </div>

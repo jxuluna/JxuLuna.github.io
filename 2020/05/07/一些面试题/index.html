@@ -79,19 +79,17 @@
 
 
 
-<meta name="description" content="JavaScript中数组的迭代方法: forEach、map、filter、reduce、every、some（掘金上看到的，存下来）">
+<meta name="description" content="3601.amd和cmd2.async&#x2F;await原理3.computed实现原理4.响应式原理5.transition（图标）6.首屏白屏优化7.数组降维并去重8.diff算法9.webpack proxy跨域原理10.cors怎么设置11.$emit&#x2F;$on实现12.能否自己实现发布订阅模式13.懒加载(done)14.html转成vnode15.url和uri的区别 1.vue首屏加载优化2">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JavaScript中数组的迭代方法">
-<meta property="og:url" content="http://yoursite.com/2020/03/05/JavaScript%E4%B8%AD%E6%95%B0%E7%BB%84%E7%9A%84%E8%BF%AD%E4%BB%A3%E6%96%B9%E6%B3%95/index.html">
+<meta property="og:title" content="面试准备之一些面试题">
+<meta property="og:url" content="http://yoursite.com/2020/05/07/%E4%B8%80%E4%BA%9B%E9%9D%A2%E8%AF%95%E9%A2%98/index.html">
 <meta property="og:site_name" content="JxuLuna">
-<meta property="og:description" content="JavaScript中数组的迭代方法: forEach、map、filter、reduce、every、some（掘金上看到的，存下来）">
+<meta property="og:description" content="3601.amd和cmd2.async&#x2F;await原理3.computed实现原理4.响应式原理5.transition（图标）6.首屏白屏优化7.数组降维并去重8.diff算法9.webpack proxy跨域原理10.cors怎么设置11.$emit&#x2F;$on实现12.能否自己实现发布订阅模式13.懒加载(done)14.html转成vnode15.url和uri的区别 1.vue首屏加载优化2">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://tva1.sinaimg.cn/large/00831rSTgy1gcieoqfl9yj30m82gwjt5.jpg">
-<meta property="article:published_time" content="2020-03-04T17:26:29.000Z">
-<meta property="article:modified_time" content="2020-03-04T17:26:29.000Z">
+<meta property="article:published_time" content="2020-05-07T13:56:10.000Z">
+<meta property="article:modified_time" content="2020-05-05T10:21:39.448Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://tva1.sinaimg.cn/large/00831rSTgy1gcieoqfl9yj30m82gwjt5.jpg">
 
 
 
@@ -121,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2020/03/05/JavaScript中数组的迭代方法/"/>
+  <link rel="canonical" href="http://yoursite.com/2020/05/07/一些面试题/"/>
 
 
 
 
 
-  <title>JavaScript中数组的迭代方法 | JxuLuna</title>
+  <title>面试准备之一些面试题 | JxuLuna</title>
   
 
 
@@ -264,7 +262,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/05/JavaScript%E4%B8%AD%E6%95%B0%E7%BB%84%E7%9A%84%E8%BF%AD%E4%BB%A3%E6%96%B9%E6%B3%95/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/07/%E4%B8%80%E4%BA%9B%E9%9D%A2%E8%AF%95%E9%A2%98/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="John Doe">
@@ -281,7 +279,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">JavaScript中数组的迭代方法</h1>
+          <h1 class="post-title" itemprop="name headline">面试准备之一些面试题</h1>
         
 
         <div class="post-meta">
@@ -293,8 +291,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-03-05T01:26:29+08:00">
-                2020-03-05
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-05-07T21:56:10+08:00">
+                2020-05-07
               </time>
             
 
@@ -316,8 +314,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/javaScript/" itemprop="url" rel="index">
-                    <span itemprop="name">javaScript</span>
+                  <a href="/categories/%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87/" itemprop="url" rel="index">
+                    <span itemprop="name">面试准备</span>
                   </a>
                 </span>
 
@@ -353,8 +351,8 @@
       
 
       
-        <h3 id="JavaScript中数组的迭代方法-forEach、map、filter、reduce、every、some"><a href="#JavaScript中数组的迭代方法-forEach、map、filter、reduce、every、some" class="headerlink" title="JavaScript中数组的迭代方法: forEach、map、filter、reduce、every、some"></a>JavaScript中数组的迭代方法: forEach、map、filter、reduce、every、some</h3><p>（掘金上看到的，存下来）</p>
-<p><img src="https://tva1.sinaimg.cn/large/00831rSTgy1gcieoqfl9yj30m82gwjt5.jpg" alt=""></p>
+        <p>360<br>1.amd和cmd<br>2.async/await原理<br>3.computed实现原理<br>4.响应式原理<br>5.transition（图标）<br>6.首屏白屏优化<br>7.数组降维并去重<br>8.diff算法<br>9.webpack proxy跨域原理<br>10.cors怎么设置<br>11.$emit/$on实现<br>12.能否自己实现发布订阅模式<br>13.懒加载(done)<br>14.html转成vnode<br>15.url和uri的区别</p>
+<p>1.vue首屏加载优化<br>2.异步组件<br>3.事件循环（宏任务、微任务有哪些）<br>4.webpack跨域 proxy ,其他跨域<br>5.http2.0特点、<br>6.0.1+0.2 !=0.3<br>7.css优化、提升性能<br>8.url输入发生了什么<br>9.https原理<br>10.网络安全（xss，csrf）<br>11.新的项目怎么开始（技术架构）<br>12.地图api<br>13.前端新技术<br>14.箭头函数this指向<br>15.weakSet和set的区别<br>16.数组遍历的方法<br>17.reduce用法<br>18.vue-cli脚手架的理解<br>19.vuex的数据流动<br>20.vue的通信<br>21.前后端接口联调</p>
 
       
     </div>
@@ -379,15 +377,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2020/04/22/Vue/" rel="next" title="面试准备之Vue">
+                <i class="fa fa-chevron-left"></i> 面试准备之Vue
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2020/03/19/%E9%AB%98%E5%BE%B7%E5%9C%B0%E5%9B%BE%E7%82%B9%E8%81%9A%E5%90%88%E7%9A%84%E4%BD%BF%E7%94%A8/" rel="prev" title="高德地图点聚合的使用">
-                高德地图点聚合的使用 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -439,17 +437,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -500,22 +489,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#JavaScript中数组的迭代方法-forEach、map、filter、reduce、every、some"><span class="nav-number">1.</span> <span class="nav-text">JavaScript中数组的迭代方法: forEach、map、filter、reduce、every、some</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
