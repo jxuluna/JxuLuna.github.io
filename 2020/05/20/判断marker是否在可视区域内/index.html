@@ -79,14 +79,14 @@
 
 
 
-<meta name="description" content="3601.amd和cmd2.async&#x2F;await原理3.computed实现原理4.响应式原理5.transition（图标）6.首屏白屏优化7.数组降维并去重8.diff算法9.webpack proxy跨域原理10.cors怎么设置11.$emit&#x2F;$on实现12.能否自己实现发布订阅模式13.懒加载(done)14.html转成vnode15.url和uri的区别 1.vue首屏加载优化2">
+<meta name="description" content="判断marker是否在可视区域内可根据getBounds方法获取到地图四个角的位置坐标，并将其围城一个矩形，再根据isPointInRing方法判断marker是否在区域内 12345678910var bounds &#x3D; map.getBounds();var NorthEast &#x3D; bounds.getNorthEast();var SouthWest &#x3D; boun">
 <meta property="og:type" content="article">
-<meta property="og:title" content="面试准备之一些面试题">
-<meta property="og:url" content="http://yoursite.com/2020/05/07/%E4%B8%80%E4%BA%9B%E9%9D%A2%E8%AF%95%E9%A2%98/index.html">
+<meta property="og:title" content="判断marker是否在可视区域内">
+<meta property="og:url" content="http://yoursite.com/2020/05/20/%E5%88%A4%E6%96%ADmarker%E6%98%AF%E5%90%A6%E5%9C%A8%E5%8F%AF%E8%A7%86%E5%8C%BA%E5%9F%9F%E5%86%85/index.html">
 <meta property="og:site_name" content="JxuLuna">
-<meta property="og:description" content="3601.amd和cmd2.async&#x2F;await原理3.computed实现原理4.响应式原理5.transition（图标）6.首屏白屏优化7.数组降维并去重8.diff算法9.webpack proxy跨域原理10.cors怎么设置11.$emit&#x2F;$on实现12.能否自己实现发布订阅模式13.懒加载(done)14.html转成vnode15.url和uri的区别 1.vue首屏加载优化2">
-<meta property="article:published_time" content="2020-05-07T13:56:10.000Z">
-<meta property="article:modified_time" content="2020-05-05T10:21:39.448Z">
+<meta property="og:description" content="判断marker是否在可视区域内可根据getBounds方法获取到地图四个角的位置坐标，并将其围城一个矩形，再根据isPointInRing方法判断marker是否在区域内 12345678910var bounds &#x3D; map.getBounds();var NorthEast &#x3D; bounds.getNorthEast();var SouthWest &#x3D; boun">
+<meta property="article:published_time" content="2020-05-20T04:10:48.906Z">
+<meta property="article:modified_time" content="2020-05-20T04:11:38.428Z">
 <meta property="article:author" content="JxuLuna">
 <meta name="twitter:card" content="summary">
 
@@ -118,13 +118,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2020/05/07/一些面试题/"/>
+  <link rel="canonical" href="http://yoursite.com/2020/05/20/判断marker是否在可视区域内/"/>
 
 
 
 
 
-  <title>面试准备之一些面试题 | JxuLuna</title>
+  <title>判断marker是否在可视区域内 | JxuLuna</title>
   
 
 
@@ -251,7 +251,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/07/%E4%B8%80%E4%BA%9B%E9%9D%A2%E8%AF%95%E9%A2%98/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/20/%E5%88%A4%E6%96%ADmarker%E6%98%AF%E5%90%A6%E5%9C%A8%E5%8F%AF%E8%A7%86%E5%8C%BA%E5%9F%9F%E5%86%85/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="JxuLuna">
@@ -268,7 +268,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">面试准备之一些面试题</h1>
+          <h1 class="post-title" itemprop="name headline">判断marker是否在可视区域内</h1>
         
 
         <div class="post-meta">
@@ -280,8 +280,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-07T21:56:10+08:00">
-                2020-05-07
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-20T12:10:48+08:00">
+                2020-05-20
               </time>
             
 
@@ -290,28 +290,6 @@
             
           </span>
 
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87/" itemprop="url" rel="index">
-                    <span itemprop="name">面试准备</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -340,9 +318,11 @@
       
 
       
-        <p>360<br>1.amd和cmd<br>2.async/await原理<br>3.computed实现原理<br>4.响应式原理<br>5.transition（图标）<br>6.首屏白屏优化<br>7.数组降维并去重<br>8.diff算法<br>9.webpack proxy跨域原理<br>10.cors怎么设置<br>11.$emit/$on实现<br>12.能否自己实现发布订阅模式<br>13.懒加载(done)<br>14.html转成vnode<br>15.url和uri的区别</p>
-<p>1.vue首屏加载优化<br>2.异步组件<br>3.事件循环（宏任务、微任务有哪些）<br>4.webpack跨域 proxy ,其他跨域<br>5.http2.0特点、<br>6.0.1+0.2 !=0.3<br>7.css优化、提升性能<br>8.url输入发生了什么<br>9.https原理<br>10.网络安全（xss，csrf）<br>11.新的项目怎么开始（技术架构）<br>12.地图api<br>13.前端新技术<br>14.箭头函数this指向<br>15.weakSet和set的区别<br>16.数组遍历的方法<br>17.reduce用法<br>18.vue-cli脚手架的理解<br>19.vuex的数据流动<br>20.vue的通信<br>21.前后端接口联调</p>
+        <h3 id="判断marker是否在可视区域内"><a href="#判断marker是否在可视区域内" class="headerlink" title="判断marker是否在可视区域内"></a>判断marker是否在可视区域内</h3><p>可根据getBounds方法获取到地图四个角的位置坐标，并将其围城一个矩形，再根据isPointInRing方法判断marker是否在区域内</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">var bounds &#x3D; map.getBounds();</span><br><span class="line">var NorthEast &#x3D; bounds.getNorthEast();</span><br><span class="line">var SouthWest &#x3D; bounds.getSouthWest();</span><br><span class="line">var SouthEast &#x3D; [NorthEast.lng, SouthWest.lat];</span><br><span class="line">var NorthWest &#x3D; [SouthWest.lng, NorthEast.lat];</span><br><span class="line">var path &#x3D; [[NorthEast.lng, NorthEast.lat], SouthEast, [SouthWest.lng, SouthWest.lat], NorthWest];</span><br><span class="line">var isPointInRing &#x3D; AMap.GeometryUtil.isPointInRing([carMarker.De.position.lng,carMarker.De.position.lat], path);</span><br><span class="line">if (!isPointInRing) &#123;</span><br><span class="line">    map.setCenter([carMarker.De.position.lng,carMarker.De.position.lat]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<p>实际使用场景</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">carMarker.on(&#39;moving&#39;, function (e) &#123;</span><br><span class="line">    &#x2F;&#x2F; 判断车是否在可视区域内</span><br><span class="line">    var bounds &#x3D; map.getBounds();</span><br><span class="line">    var NorthEast &#x3D; bounds.getNorthEast();</span><br><span class="line">    var SouthWest &#x3D; bounds.getSouthWest();</span><br><span class="line">    var SouthEast &#x3D; [NorthEast.lng, SouthWest.lat];</span><br><span class="line">    var NorthWest &#x3D; [SouthWest.lng, NorthEast.lat];</span><br><span class="line">    var path &#x3D; [[NorthEast.lng, NorthEast.lat], SouthEast, [SouthWest.lng, SouthWest.lat], NorthWest];</span><br><span class="line">    var isPointInRing &#x3D; AMap.GeometryUtil.isPointInRing([carMarker.De.position.lng,carMarker.De.position.lat], path);</span><br><span class="line">    if (!isPointInRing) &#123;</span><br><span class="line">        map.setCenter([carMarker.De.position.lng,carMarker.De.position.lat]);</span><br><span class="line">    &#125;</span><br><span class="line">    passedPolyline.setPath(e.passedPath);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -366,8 +346,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2020/04/22/Vue/" rel="next" title="面试准备之Vue">
-                <i class="fa fa-chevron-left"></i> 面试准备之Vue
+              <a href="/2020/05/07/%E4%B8%80%E4%BA%9B%E9%9D%A2%E8%AF%95%E9%A2%98/" rel="next" title="面试准备之一些面试题">
+                <i class="fa fa-chevron-left"></i> 面试准备之一些面试题
               </a>
             
           </div>
@@ -375,10 +355,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2020/05/20/%E5%88%A4%E6%96%ADmarker%E6%98%AF%E5%90%A6%E5%9C%A8%E5%8F%AF%E8%A7%86%E5%8C%BA%E5%9F%9F%E5%86%85/" rel="prev" title="判断marker是否在可视区域内">
-                判断marker是否在可视区域内 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -430,8 +406,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -486,6 +471,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#判断marker是否在可视区域内"><span class="nav-number">1.</span> <span class="nav-text">判断marker是否在可视区域内</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
